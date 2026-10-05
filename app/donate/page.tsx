@@ -4,9 +4,9 @@ import { DonationForm } from "@/components/DonationForm";
 import { ShieldCheck, Heart, Award, FileCheck } from "lucide-react";
 
 export const metadata = {
-  title: "Donate Online | Vijayawada Charitable Trust",
+  title: "Donate Online | Noor Basha Muslim Charitable Trust",
   description:
-    "Make an online 80G tax-deductible donation to Vijayawada Charitable Trust via Razorpay (Cards, UPI, Netbanking).",
+    "Support youth skill training and community welfare at Noor Basha Muslim Charitable Trust, Edupugallu, Vijayawada.",
 };
 
 interface DonatePageProps {
@@ -24,7 +24,7 @@ export default async function DonatePage({ searchParams }: DonatePageProps) {
           Make a Life-Changing Donation
         </h1>
         <p className="text-base text-[#FAF8F5]/80 max-w-2xl mx-auto px-4">
-          Every contribution goes directly to verified grassroots welfare programs in Vijayawada and surrounding rural habitations.
+          Support free skill training, hostel, daily food for youth, educational scholarships, and community relief drives run by Noor Basha Muslim Charitable Trust.
         </p>
       </section>
 
@@ -47,7 +47,7 @@ export default async function DonatePage({ searchParams }: DonatePageProps) {
                 </div>
 
                 <p className="text-sm text-[#1E293B]/80 leading-relaxed">
-                  Donations to Vijayawada Charitable Trust qualify for 50% deduction under Section 80G. Ensure you enter your valid 10-character PAN to receive an official Form 10BE tax certificate.
+                  Donations to Noor Basha Muslim Charitable Trust qualify for 50% deduction under Section 80G. Ensure you enter your valid 10-character PAN to receive an official Form 10BE tax certificate.
                 </p>
 
                 <div className="p-4 bg-[#FAF8F5] rounded-xl border border-[#E5DFD7] space-y-2 text-xs text-[#1E293B]">

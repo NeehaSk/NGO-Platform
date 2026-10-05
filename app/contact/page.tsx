@@ -4,21 +4,24 @@ import { ContactForm } from "@/components/ContactForm";
 import { MapPin, Phone, Mail, Clock, ShieldCheck } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us | Vijayawada Charitable Trust",
+  title: "Contact Us | Noor Basha Muslim Charitable Trust",
   description:
-    "Get in touch with our administrative and field offices in Vijayawada, Krishna district, Andhra Pradesh.",
+    "Contact Noor Basha Muslim Charitable Trust, Noor Basha Bhavan, Edupugallu, Vijayawada, Andhra Pradesh.",
 };
 
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="bg-[#0F3E36] text-white py-16 text-center space-y-4">
-        <Badge variant="accent">Connect With Us</Badge>
+        <Badge variant="accent">కమిటీ సంప్రదింపులు / Helpline</Badge>
         <h1 className="font-serif text-3xl sm:text-5xl font-bold">
-          Contact Our Vijayawada Office
+          Noor Basha Muslim Charitable Trust
         </h1>
+        <p className="text-lg font-semibold text-[#D97736]">
+          నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్ కమిటీ
+        </p>
         <p className="text-base text-[#FAF8F5]/80 max-w-2xl mx-auto px-4">
-          Have questions regarding our ongoing programs, 80G tax receipts, CSR partnerships, or volunteering? We welcome your correspondence.
+          ఉచిత నైపుణ్య శిక్షణ, నూతన బ్యాచ్ ప్రవేశాలు, హాస్టల్ వసతి మరియు ట్రస్ట్ సేవా కార్యక్రమాల కొరకు మమ్మల్ని సంప్రదించండి.
         </p>
       </section>
 
@@ -29,16 +32,19 @@ export default function ContactPage() {
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-white p-8 rounded-2xl border border-[#E5DFD7] space-y-6 shadow-xs">
                 <h3 className="font-serif text-2xl font-bold text-[#0F3E36]">
-                  Trust Headquarters
+                  శిక్షణా ప్రదేశము & చిరునామా
                 </h3>
 
                 <div className="space-y-4 text-sm text-[#1E293B]">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-[#D97736] shrink-0 mt-1" />
                     <div>
-                      <strong className="block text-[#0F3E36]">Registered Address:</strong>
+                      <strong className="block text-[#0F3E36]">Address / శిక్షణా కేంద్రం:</strong>
                       <span>
-                        [Placeholder: Door No. 29-4-12, MG Road / Governorpet, Vijayawada, Krishna District, Andhra Pradesh - 520002, India]
+                        <strong>AURA EDUCATIONAL SOCIETY & NOOR BASHA TRUST</strong><br />
+                        D.No. 5-7, Noor Basha Bhavan,<br />
+                        Beside New Sachivalayam, Backside of Gurukula Patasala,<br />
+                        Edupugallu, Kankipadu Mandal, Krishna Dist., A.P.
                       </span>
                     </div>
                   </div>
@@ -46,8 +52,18 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <Phone className="w-5 h-5 text-[#D97736] shrink-0 mt-1" />
                     <div>
-                      <strong className="block text-[#0F3E36]">Phone / Helpdesk:</strong>
-                      <span>[Placeholder: +91 866 245XXXX / +91 98480 XXXXX]</span>
+                      <strong className="block text-[#0F3E36]">Helpline Numbers (ఫోన్ నెంబర్లు):</strong>
+                      <div className="mt-1 space-y-1">
+                        <a href="tel:8309177391" className="block text-[#0F3E36] font-bold hover:text-[#D97736]">
+                          📞 8309177391
+                        </a>
+                        <a href="tel:9182065618" className="block text-[#0F3E36] font-bold hover:text-[#D97736]">
+                          📞 9182065618
+                        </a>
+                        <a href="tel:6281698138" className="block text-[#0F3E36] font-bold hover:text-[#D97736]">
+                          📞 6281698138
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -55,7 +71,7 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 text-[#D97736] shrink-0 mt-1" />
                     <div>
                       <strong className="block text-[#0F3E36]">Email Support:</strong>
-                      <span>contact@charitabletrust-vijayawada.org</span>
+                      <span>contact@noorbashatrust.org</span>
                     </div>
                   </div>
 

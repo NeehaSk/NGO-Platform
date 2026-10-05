@@ -7,7 +7,7 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 import { formatDate } from "@/lib/utils";
 
 export const metadata = {
-  title: "Beneficiary Stories | Vijayawada Charitable Trust",
+  title: "Beneficiary Stories | Noor Basha Muslim Charitable Trust",
   description:
     "Real-life accounts of children, women, and elderly citizens empowered across Vijayawada and Andhra Pradesh.",
 };

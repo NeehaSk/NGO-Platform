@@ -9,7 +9,7 @@ import { formatINR } from "@/lib/utils";
 import { Heart, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Our Programs | Vijayawada Charitable Trust",
+  title: "Our Programs | Noor Basha Muslim Charitable Trust",
   description:
     "Explore our dedicated interventions in education, healthcare, and women livelihood across Vijayawada and Krishna district.",
 };

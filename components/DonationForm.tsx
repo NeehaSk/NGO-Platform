@@ -83,7 +83,7 @@ export function DonationForm({ preselectedProgram }: { preselectedProgram?: stri
           key: orderData.keyId,
           amount: orderData.amount,
           currency: orderData.currency,
-          name: "Vijayawada Charitable Trust",
+          name: "Noor Basha Muslim Charitable Trust",
           description: "Charitable Trust Donation (80G Tax Deductible)",
           order_id: orderData.orderId,
           prefill: {
@@ -161,7 +161,7 @@ export function DonationForm({ preselectedProgram }: { preselectedProgram?: stri
             Dhanyavadalu! Thank You, {successData.donorName}
           </h3>
           <p className="text-base text-[#1E293B]/80 max-w-lg mx-auto">
-            Your generous donation of <strong>{formatINR(successData.amount)}</strong> has been successfully received by Vijayawada Charitable Trust.
+            Your generous donation of <strong>{formatINR(successData.amount)}</strong> has been successfully received by Noor Basha Muslim Charitable Trust.
           </p>
         </div>
 

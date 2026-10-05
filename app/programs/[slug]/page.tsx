@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: ProgramDetailPageProps) {
   if (!program) return { title: "Program Not Found" };
 
   return {
-    title: `${program.title} | Vijayawada Charitable Trust`,
+    title: `${program.title} | Noor Basha Muslim Charitable Trust`,
     description: program.shortDescription,
   };
 }

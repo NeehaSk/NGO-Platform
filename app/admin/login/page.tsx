@@ -100,14 +100,14 @@ export default function AdminLoginPage() {
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to Public Website
         </Link>
-        <div className="w-12 h-12 rounded-full bg-[#0F3E36] flex items-center justify-center text-white mx-auto text-lg font-bold border-2 border-[#D97736] shadow-sm">
-          VCT
+        <div className="w-12 h-12 rounded-full bg-[#0F3E36] flex items-center justify-center text-white mx-auto text-xs font-bold tracking-tighter border-2 border-[#D97736] shadow-sm">
+          NBMCT
         </div>
         <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0F3E36]">
           Admin CMS Portal
         </h2>
         <p className="text-xs sm:text-sm text-[#64748B]">
-          Vijayawada Charitable Trust Administrative Management
+          Noor Basha Muslim Charitable Trust (నూర్ బాషా చారిటబుల్ ట్రస్ట్)
         </p>
       </div>
 

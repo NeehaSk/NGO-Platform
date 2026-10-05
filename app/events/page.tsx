@@ -8,7 +8,7 @@ import { Calendar, MapPin, ArrowRight } from "lucide-react";
 import { formatDate } from "@/lib/utils";
 
 export const metadata = {
-  title: "Community Drives & Events | Vijayawada Charitable Trust",
+  title: "DDU-GKY Admissions & Events | Noor Basha Muslim Charitable Trust",
   description:
     "Participate in upcoming medical screening camps, cleanliness drives, and educational kit distributions in Vijayawada.",
 };

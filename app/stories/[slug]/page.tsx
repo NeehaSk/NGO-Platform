@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: StoryDetailPageProps) {
   if (!story) return { title: "Story Not Found" };
 
   return {
-    title: `${story.title} | Vijayawada Charitable Trust`,
+    title: `${story.title} | Noor Basha Muslim Charitable Trust`,
     description: story.excerpt,
   };
 }

@@ -48,7 +48,7 @@ export function VolunteerForm() {
           Thank You for Stepping Up!
         </h3>
         <p className="text-sm text-[#1E293B]/80 max-w-md mx-auto">
-          Your volunteer application has been received. Our Vijayawada field coordinator will review your profile and contact you within 2-3 working days.
+          Your volunteer/training inquiry has been received. Our Noor Basha Bhavan coordinator in Edupugallu will review your application and contact you shortly.
         </p>
         <Button variant="outline" onClick={() => setSubmitted(false)} size="sm">
           Submit Another Response

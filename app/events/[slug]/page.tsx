@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: EventDetailPageProps) {
   if (!event) return { title: "Event Not Found" };
 
   return {
-    title: `${event.title} | Vijayawada Charitable Trust`,
+    title: `${event.title} | Noor Basha Muslim Charitable Trust`,
     description: event.description.slice(0, 160),
   };
 }

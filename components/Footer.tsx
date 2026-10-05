@@ -28,19 +28,24 @@ export function Footer() {
           {/* Trust Identity */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#134E48] flex items-center justify-center text-white font-bold text-base border-2 border-[#D97736]">
-                VCT
+              <div className="w-10 h-10 rounded-full bg-[#134E48] flex items-center justify-center text-white font-bold text-xs tracking-tighter border-2 border-[#D97736] shrink-0">
+                NBMCT
               </div>
-              <span className="font-serif text-lg font-bold text-white tracking-tight">
-                Vijayawada Charitable Trust
-              </span>
+              <div className="flex flex-col">
+                <span className="font-serif text-base sm:text-lg font-bold text-white tracking-tight">
+                  Noor Basha Muslim Charitable Trust
+                </span>
+                <span className="text-xs text-[#FAF8F5]/80 font-medium">
+                  నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్
+                </span>
+              </div>
             </div>
             <p className="text-sm text-[#FAF8F5]/80 leading-relaxed">
-              Dedicated to uplifting underprivileged communities across Vijayawada, Krishna district, and Andhra Pradesh through grassroots education, preventive health camps, and women empowerment initiatives.
+              నూర్ బాషా భవన్, ఈడుపుగల్లు, విజయవాడ. DDU-GKY మరియు SEEDAP సహకారంతో గ్రామీణ నిరుద్యోగ యువతకు 90 రోజుల ఉచిత నైపుణ్య శిక్షణ, ఉచిత హాస్టల్, భోజన వసతి మరియు 100% ఉద్యోగ అవకాశాలు.
             </p>
             <div className="text-xs text-[#FAF8F5]/60 pt-2 space-y-1">
-              <p>Registered Public Charitable Trust</p>
-              <p>Reg No: [Placeholder / District Registrar, Vijayawada]</p>
+              <p>Registered Public Charitable Trust • Andhra Pradesh</p>
+              <p>Venue: D.No. 5-7, Noor Basha Bhavan, Edupugallu, Vijayawada</p>
             </div>
           </div>
 
@@ -110,28 +115,32 @@ export function Footer() {
 
           {/* Contact Details */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-white text-base tracking-wide mb-4">Headquarters</h3>
+            <h3 className="font-semibold text-white text-base tracking-wide mb-4">Training Center & Contact</h3>
             <div className="flex items-start gap-3 text-sm text-[#FAF8F5]/80">
               <MapPin className="w-4 h-4 text-[#D97736] shrink-0 mt-1" />
-              <span>[Placeholder Address: MG Road / Governorpet, Vijayawada, Krishna District, Andhra Pradesh - 520002, India]</span>
+              <span>D.No. 5-7, Noor Basha Bhavan, Beside New Sachivalayam, Backside of Gurukula Patasala, Edupugallu, Kankipadu Mandal, Krishna Dist., A.P.</span>
             </div>
-            <div className="flex items-center gap-3 text-sm text-[#FAF8F5]/80">
-              <Phone className="w-4 h-4 text-[#D97736] shrink-0" />
-              <span>[Placeholder: +91 866 2XXXXXX / +91 98480 XXXXX]</span>
+            <div className="flex items-start gap-3 text-sm text-[#FAF8F5]/80">
+              <Phone className="w-4 h-4 text-[#D97736] shrink-0 mt-1" />
+              <div className="space-y-0.5">
+                <a href="tel:8309177391" className="block hover:text-[#D97736] font-medium">8309177391</a>
+                <a href="tel:9182065618" className="block hover:text-[#D97736] font-medium">9182065618</a>
+                <a href="tel:6281698138" className="block hover:text-[#D97736] font-medium">6281698138</a>
+              </div>
             </div>
             <div className="flex items-center gap-3 text-sm text-[#FAF8F5]/80">
               <Mail className="w-4 h-4 text-[#D97736] shrink-0" />
-              <span>[Placeholder: contact@charitabletrust-vijayawada.org]</span>
+              <span>contact@noorbashatrust.org</span>
             </div>
           </div>
         </div>
 
         {/* Bottom copyright & disclaimers */}
         <div className="mt-12 pt-8 border-t border-emerald-900/60 flex flex-col sm:flex-row items-center justify-between text-xs text-[#FAF8F5]/60 gap-4">
-          <p>© {new Date().getFullYear()} Vijayawada Charitable Trust. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Noor Basha Muslim Charitable Trust (నూర్ బాషా చారిటబుల్ ట్రస్ట్). All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span>Built with Next.js & PostgreSQL</span>
-            <span>Nonprofit Compliance Disclaimer</span>
+            <span>DDU-GKY & SEEDAP Training Partner</span>
+            <span>Edupugallu, Vijayawada</span>
           </div>
         </div>
       </div>

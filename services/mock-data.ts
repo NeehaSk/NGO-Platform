@@ -1,44 +1,80 @@
-// Fallback mock data when database server is not yet connected locally
+// Fallback mock data with bilingual details for Noor Basha Muslim Charitable Trust
 export const FALLBACK_PROGRAMS = [
   {
-    id: "prog_1",
-    slug: "vidya-jyothi-scholarships",
-    title: "Vidya Jyothi: Rural Education Support",
+    id: "prog_ddu_gky",
+    slug: "ddu-gky-skill-development",
+    title: "DDU-GKY Free Skill Training & Job Placement (ఉచిత నైపుణ్య శిక్షణ)",
     shortDescription:
-      "Providing textbooks, uniform kits, digital labs, and merit scholarships for underprivileged children across Vijayawada and Krishna district.",
-    description: `### Overview\nEducation is the single most potent equalizer. In rural pockets along the Krishna river basin and marginalized colonies of Vijayawada, hundreds of bright children drop out due to lack of school essentials and examination fees.\n\n### Our Intervention\n1. School Supply Distribution: Complete sets of bilingual textbooks, notebooks, school bags, and uniforms.\n2. Community Study Centers: Evening supplementary classes run by local youth mentors.\n3. Girls' Secondary Education Scholarships: Financial grants covering board exam fees and transport cycles.\n\n### Measurable Goals\n* Support 500+ primary school students annually.\n* Setup 5 digital learning corners in government schools.\n* Zero dropout rate among enrolled scholarship recipients.`,
+      "90-day residential free job training with free hostel, food, campus placement & Govt certificate for rural unemployed youth (Age 18-35, 10th pass).",
+    description: `### Overview / అవలోకనం
+నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్ ఆధ్వర్యంలో విజయవాడలోని ఈడుపుగల్లు లో నిర్మించిన నూర్ బాషా భవన్ లో గ్రామీణ నిరుద్యోగ యువతీ యువకులకు ఉచిత శిక్షణ మరియు ఉపాధి కల్పన కొరకు 90 రోజుల DDU-GKY (దీన దయాళ్ ఉపాధ్యాయ గ్రామీణ కౌశల్య యోజన) మరియు SEEDAP ద్వారా ఉచిత నైపుణ్య శిక్షణ అందించబడుతోంది.
+
+### Key Features / ముఖ్యమైన సదుపాయాలు
+1. **ఉచిత నైపుణ్య శిక్షణ (100% Free Training)**: Industry-standard 90-day training.
+2. **ఉచిత వసతి & హాస్టల్ (Free Hostel Accommodation)**: Safe residential facility at Noor Basha Bhavan.
+3. **ఉచిత అల్పాహారము & భోజన సదుపాయము (Free Food & Breakfast)**: Hygienic meals provided daily.
+4. **100% జాబ్ ప్లేస్‌మెంట్ (100% Placement Support)**: On-campus recruitment drives upon completion.
+5. **కేంద్ర ప్రభుత్వ సర్టిఫికేట్ (Govt of India Certification)**: Official recognized skill certificate.
+
+### Courses Offered / శిక్షణ అంశాలు
+* **Solar Lighting Assemble** (సోలార్ లైటింగ్ అసెంబ్లింగ్)
+* **Computers and Typing** (కంప్యూటర్లు & టైపింగ్)
+* **Spoken English** (స్పోకెన్ ఇంగ్లీష్)
+* **Communication & Life Skills** (కమ్యూనికేషన్ స్కిల్స్)
+
+### Eligibility / అర్హతలు
+* కనీస అర్హత: 10వ తరగతి (SSC Pass)
+* వయోపరిమితి: 18 సంవత్సరాల నుండి 35 సంవత్సరాల వరకు (Age: 18 - 35 yrs)
+* కుల, మతాలకు అతీతంగా ఎవరైనా చేరవచ్చును (Open to all communities)
+
+### Training Venue & Contact
+**AURA EDUCATIONAL SOCIETY & NOOR BASHA TRUST**
+D.No. 5-7, Noor Basha Bhavan, Beside New Sachivalayam, Backside of Gurukula Patasala, Edupugallu, Kankipadu Mandal, Krishna Dist., A.P.
+Phone: 8309177391 / 9182065618 / 6281698138`,
+    coverImage: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1200&auto=format&fit=crop",
+    targetAmount: 600000,
+    raisedAmount: 450000,
+    beneficiaries: 120,
+    status: "ACTIVE",
+    featured: true,
+  },
+  {
+    id: "prog_vidya_scholarship",
+    slug: "vidya-jyothi-scholarships",
+    title: "Vidya Sahaya: Education & Scholarship Support (విద్యార్థి వేతనాలు)",
+    shortDescription:
+      "Textbooks, digital assistance, and merit scholarships for deserving underprivileged students across Edupugallu and Vijayawada rural areas.",
+    description: `### Overview
+Education is the single most potent equalizer. In rural Krishna district, many bright young students drop out due to economic hardships.
+
+### Our Intervention
+1. **School & College Kits**: Bilingual textbooks, study materials, and school bags.
+2. **Tuition & Study Centers**: Evening supplementary guidance at Noor Basha Bhavan.
+3. **Merit Support**: Financial assistance for higher education and vocational courses.`,
     coverImage: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
     targetAmount: 500000,
     raisedAmount: 325000,
-    beneficiaries: 520,
+    beneficiaries: 350,
     status: "ACTIVE",
     featured: true,
   },
   {
-    id: "prog_2",
-    slug: "arogya-raksha-mobile-clinics",
-    title: "Arogya Raksha: Preventive Health Camps",
+    id: "prog_health_relief",
+    slug: "arogya-raksha-health-camps",
+    title: "Arogya Seva: Community Health & Relief (ఉచిత వైద్య శిబిరాలు)",
     shortDescription:
-      "Fortnightly free medical diagnostics, geriatric health checkups, vision screenings, and vital medicines for vulnerable families.",
-    description: `### Overview\nAccess to early preventive diagnostics remains limited for daily-wage laborers, sanitation workers, and elderly citizens in suburban Vijayawada and flood-prone riverbank settlements.\n\n### Our Intervention\n1. Mobile Diagnostic Vans: Routine blood glucose, blood pressure, hemoglobin, and vision testing.\n2. Specialist Consultations: Volunteer doctors specializing in general medicine, pediatrics, and ophthalmology.\n3. Free Prescription Support: Dispensing 30-day generic medications for chronic ailments.\n\n### Measurable Goals\n* Conduct 24 medical camps across 12 wards each year.\n* Free cataract screening & corrective surgeries for 150 elderly citizens.`,
+      "Routine preventive health checkups, vision screenings, emergency ration relief, and assistance for elderly and destitute families.",
+    description: `### Overview
+Access to preventive healthcare remains limited for daily-wage laborers and families in semi-rural localities around Kankipadu mandal.
+
+### Our Intervention
+1. Free diagnostic checkups (blood sugar, BP, general health).
+2. Vision screening and cataract identification.
+3. Seasonal relief and food ration distribution for elderly and widows.`,
     coverImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop",
-    targetAmount: 750000,
-    raisedAmount: 480000,
-    beneficiaries: 1840,
-    status: "ACTIVE",
-    featured: true,
-  },
-  {
-    id: "prog_3",
-    slug: "mahila-shakti-vocational-skills",
-    title: "Mahila Shakti: Women Livelihoods",
-    shortDescription:
-      "Vocational training in tailoring, organic food processing, handcrafts, and micro-entrepreneurship for single mothers and rural women.",
-    description: `### Overview\nFinancial independence transforms families and uplifts entire neighborhoods. Our skill development program equips women with market-linked vocational capabilities.\n\n### Our Intervention\n1. Certified Tailoring & Embroidery: 3-month rigorous training with modern sewing machines.\n2. Traditional Foods & Millet Snacks: Safe food handling, packaging, and local bazaar tie-ups.\n3. Financial Literacy & Self-Help Groups: Bank linkages and micro-grant mentorship.\n\n### Measurable Goals\n* Train 200 women per year with certified vocational skills.\n* Provide 50 toolkits/sewing machines to top graduating trainees.`,
-    coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop",
     targetAmount: 400000,
-    raisedAmount: 260000,
-    beneficiaries: 240,
+    raisedAmount: 280000,
+    beneficiaries: 950,
     status: "ACTIVE",
     featured: true,
   },
@@ -47,25 +83,33 @@ export const FALLBACK_PROGRAMS = [
 export const FALLBACK_STORIES = [
   {
     id: "story_1",
-    slug: "laxmis-journey-to-intermediate-college",
-    title: "How Higher Education Opened Doors for Laxmi",
+    slug: "solar-technician-placement-success",
+    title: "From Unemployed Youth to Certified Solar Technician (ఉపాధి సాధించిన యువకుడు)",
     excerpt:
-      "With our scholarship and mentorship support, Laxmi from Ibrahimpatnam became the first girl in her family to enter college.",
-    content: `Laxmi's father is a construction worker and her mother works as a domestic helper in Vijayawada. When she completed 10th grade with a 9.2 GPA, financial hardships almost forced her into early marriage.\n\nThrough the Vidya Jyothi scholarship scheme, the Trust covered her intermediate college admissions, books, and public transport bus pass. Today, Laxmi is pursuing MPC (Mathematics, Physics, Chemistry) and dreams of studying computer science.\n\n"When people invest in a girl's learning, they elevate the dignity of an entire household," shares her proud mother.`,
-    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1000&auto=format&fit=crop",
-    author: "Field Coordination Cell",
+      "After completing 90 days of DDU-GKY training at Noor Basha Bhavan in Edupugallu, Rahim secured an immediate campus placement.",
+    content: `Rahim completed his 10th class and was struggling to find stable employment in Krishna district. 
+
+Learning about the free residential program at Noor Basha Bhavan, Edupugallu, he joined the Solar Lighting Assemble and Computer training batch. With free hostel accommodation and daily nutritious food, he was able to concentrate entirely on his studies.
+
+Upon finishing the 90-day curriculum certified by the Government of India, he was selected during campus interviews and now earns an independent monthly livelihood. 
+
+"నూర్ బాషా భవన్ లో అందిన ఉచిత శిక్షణ మరియు హాస్టల్ సదుపాయం నా జీవితాన్ని మార్చింది," says Rahim with pride.`,
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+    author: "Training Cell, Noor Basha Bhavan",
     published: true,
     publishedAt: new Date(),
   },
   {
     id: "story_2",
-    slug: "vision-restored-for-grandparent-appana",
-    title: "Restoring Vision and Independence for Appana Garu",
+    slug: "computer-skills-confidence-for-rural-youth",
+    title: "Building Digital Confidence: Spoken English & Computers",
     excerpt:
-      "A routine screening at our Arogya Raksha camp helped identify severe cataracts and restored clear eyesight for a 68-year-old grandfather.",
-    content: `At 68, Appana Garu had been unable to read Telugu daily newspapers or walk safely down his street due to dense bilateral cataracts. Lacking insurance and funds, he had resigned himself to living in shadows.\n\nDuring the free health camp held in Krishna Lanka, Vijayawada, volunteer ophthalmologists diagnosed his condition. The trust facilitated his surgery at no cost through partner eye care facilities.\n\nThree weeks post-surgery, Appana Garu was smiling again, reading spiritual books and taking his grandchildren to the park.`,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
-    author: "Health Outreach Cell",
+      "Rural students from surrounding villages in Kankipadu mandal gained modern computer and communication skills at Noor Basha Bhavan.",
+    content: `Many matriculate youth from rural areas hesitate to attend corporate interviews due to lack of English communication and typing skills.
+
+At Noor Basha Bhavan, the curriculum covers Spoken English, Typing, and Personality Development alongside technical trades. Over 90 days, trainees transform into confident professionals equipped to clear job interviews with ease.`,
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop",
+    author: "Aura Educational Society Faculty",
     published: true,
     publishedAt: new Date(),
   },
@@ -73,25 +117,25 @@ export const FALLBACK_STORIES = [
 
 export const FALLBACK_EVENTS = [
   {
-    id: "event_1",
-    slug: "annual-free-eye-and-health-camp-2026",
-    title: "Annual Mega Health & Vision Screening Camp",
+    id: "event_new_batch",
+    slug: "ddu-gky-new-batch-admissions",
+    title: "DDU-GKY New Batch Admissions Open (కొత్త బ్యాచ్ కి దరఖాస్తులు ఆహ్వానం)",
     description:
-      "Comprehensive health checkups, dental check, diabetic screening, and free distribution of prescribed eye glasses in partnership with local medical volunteers.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
-    location: "Community Hall, Krishna Lanka, Vijayawada, AP",
-    eventDate: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000),
+      "Free 90-Day DDU-GKY Skill Training with Free Hostel, Food & 100% Placement. Limited seats available! Eligibility: 10th Pass, Age 18-35. Contact 8309177391 / 9182065618 / 6281698138.",
+    image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1200&auto=format&fit=crop",
+    location: "D.No. 5-7, Noor Basha Bhavan, Edupugallu, Kankipadu Mandal, Krishna Dist., AP",
+    eventDate: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000),
     status: "UPCOMING" as const,
   },
   {
-    id: "event_2",
-    slug: "krishna-riverbank-environment-cleanliness-drive",
-    title: "Krishna Riverbank Eco Cleanliness & Tree Planting",
+    id: "event_campus_drives",
+    slug: "campus-selection-drive-edupugallu",
+    title: "Mega Campus Job Selection Drive (ఉద్యోగ నియామకాలు)",
     description:
-      "Youth volunteer drive to clean up plastic waste along river ghats and plant 200 indigenous shade trees to prevent soil erosion.",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1200&auto=format&fit=crop",
-    location: "Bhavani Ghat, Vijayawada, Andhra Pradesh",
-    eventDate: new Date(Date.now() + 28 * 24 * 60 * 60 * 1000),
+      "Campus interview and certificate distribution for candidates completing the technical and solar assembly training batches.",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
+    location: "Noor Basha Bhavan, Edupugallu, Vijayawada, Andhra Pradesh",
+    eventDate: new Date(Date.now() + 25 * 24 * 60 * 60 * 1000),
     status: "UPCOMING" as const,
   },
 ];
@@ -99,30 +143,30 @@ export const FALLBACK_EVENTS = [
 export const FALLBACK_GALLERY = [
   {
     id: "gal_1",
-    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
-    title: "Digital Lab Inauguration",
-    caption: "Children experiencing educational software for the first time in Vijayawada rural school.",
-    category: "Education",
+    imageUrl: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop",
+    title: "Solar Lighting Assemble Workshop",
+    caption: "Trainees assembling solar panels and circuit units in practical lab sessions at Noor Basha Bhavan.",
+    category: "Training",
   },
   {
     id: "gal_2",
-    imageUrl: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop",
-    title: "Free Geriatric Health Checkup",
-    caption: "Senior citizens undergoing preventive diabetes check and blood pressure measurement.",
-    category: "Healthcare",
+    imageUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
+    title: "Computer & Typing Class",
+    caption: "Rural youth practicing typing and office computer applications.",
+    category: "Education",
   },
   {
     id: "gal_3",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
-    title: "Tailoring Certification Graduation",
-    caption: "Batch 4 trainees receiving graduation certificates and sewing starter kits.",
-    category: "Community",
+    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop",
+    title: "100% Placement Campus Interviews",
+    caption: "Employers conducting direct interviews for trained candidates at Edupugallu campus.",
+    category: "Placements",
   },
   {
     id: "gal_4",
     imageUrl: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop",
-    title: "Relief Kit Distribution",
-    caption: "Food and ration kits supplied to marginalized daily-wage families during seasonal floods.",
-    category: "Relief",
+    title: "Noor Basha Bhavan Community Service",
+    caption: "Community welfare, relief distribution, and trust meetings at Edupugallu.",
+    category: "Community",
   },
 ];

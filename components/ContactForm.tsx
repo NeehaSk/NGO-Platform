@@ -41,7 +41,7 @@ export function ContactForm() {
         </div>
         <h3 className="font-serif text-2xl font-bold text-[#0F3E36]">Message Delivered</h3>
         <p className="text-sm text-[#1E293B]/80 max-w-md mx-auto">
-          Thank you for reaching out to Vijayawada Charitable Trust. Our administrative office will review your message and respond promptly.
+          Thank you for reaching out to Noor Basha Muslim Charitable Trust. Our administrative committee will review your message and respond promptly.
         </p>
         <Button variant="outline" onClick={() => setSubmitted(false)} size="sm">
           Send Another Note

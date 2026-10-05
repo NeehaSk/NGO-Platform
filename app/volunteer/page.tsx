@@ -4,7 +4,7 @@ import { VolunteerForm } from "@/components/VolunteerForm";
 import { Users, Clock, Award, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Volunteer with Us | Vijayawada Charitable Trust",
+  title: "Volunteer with Us | Noor Basha Muslim Charitable Trust",
   description:
     "Join our committed brigade of volunteers driving education, healthcare camps, and women empowerment in Vijayawada.",
 };

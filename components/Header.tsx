@@ -34,12 +34,12 @@ export function Header() {
       <div className="bg-[#0F3E36] text-[#FAF8F5] text-xs py-1.5 px-4 sm:px-8 flex justify-between items-center tracking-wide">
         <div className="flex items-center gap-2">
           <MapPin className="w-3.5 h-3.5 text-[#D97736]" />
-          <span>Serving Vijayawada & Rural Andhra Pradesh</span>
+          <span>Edupugallu, Vijayawada • Krishna District, Andhra Pradesh</span>
         </div>
         <div className="hidden sm:flex items-center gap-4 text-[11px] text-[#FAF8F5]/80">
           <span className="flex items-center gap-1">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            Registered Charitable Trust • 80G Tax Deductible
+            నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్ • Regd. Public Trust
           </span>
           <Link href="/admin/login" className="hover:text-white transition-colors underline underline-offset-2">
             Staff Portal
@@ -50,15 +50,15 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* NGO Brand & Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 rounded-full bg-[#0F3E36] flex items-center justify-center text-white font-bold text-lg border-2 border-[#D97736] shadow-sm group-hover:bg-[#134E48] transition-colors">
-            VCT
+          <div className="w-11 h-11 rounded-full bg-[#0F3E36] flex items-center justify-center text-white font-bold text-sm tracking-tighter border-2 border-[#D97736] shadow-sm group-hover:bg-[#134E48] transition-colors shrink-0">
+            NBMCT
           </div>
           <div className="flex flex-col">
-            <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-[#0F3E36] group-hover:text-[#134E48] transition-colors">
-              Vijayawada Charitable Trust
+            <span className="font-serif text-base sm:text-lg font-bold tracking-tight text-[#0F3E36] group-hover:text-[#134E48] transition-colors leading-tight">
+              Noor Basha Muslim Charitable Trust
             </span>
             <span className="text-[11px] text-[#64748B] font-medium tracking-wide">
-              Registered NGO in Andhra Pradesh
+              నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్ • Edupugallu, Vijayawada
             </span>
           </div>
         </Link>

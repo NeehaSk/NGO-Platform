@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { GalleryClient } from "@/components/GalleryClient";
 
 export const metadata = {
-  title: "Field Photo Gallery | Vijayawada Charitable Trust",
+  title: "Field Photo Gallery | Noor Basha Muslim Charitable Trust",
   description:
     "Glimpses into our on-ground education programs, medical diagnostic camps, and relief work in Vijayawada.",
 };

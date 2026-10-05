@@ -2,7 +2,7 @@ import React from "react";
 import { AdminSidebar } from "@/components/AdminSidebar";
 
 export const metadata = {
-  title: "Admin Dashboard | Vijayawada Charitable Trust",
+  title: "Admin Dashboard | Noor Basha Muslim Charitable Trust",
 };
 
 export const dynamic = "force-dynamic";

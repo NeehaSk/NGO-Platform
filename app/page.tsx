@@ -37,42 +37,61 @@ export default async function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative bg-[#0F3E36] text-[#FAF8F5] py-20 lg:py-28 overflow-hidden">
+      <section className="relative bg-[#0F3E36] text-[#FAF8F5] py-16 lg:py-24 overflow-hidden">
         {/* Subtle geometric backdrop */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#D97736_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#134E48] blur-3xl opacity-50 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Urgent Bilingual Banner for New Batch */}
+          <div className="mb-8 p-4 rounded-xl bg-[#D97736]/20 border border-[#D97736]/50 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-sm">
+              <span className="font-bold text-[#D97736] uppercase tracking-wide mr-2">📢 నూతన బ్యాచ్ ప్రకటన / Admissions Open:</span>
+              <span>నిరుద్యోగ యువతీ యువకులకు DDU-GKY & SEEDAP ద్వారా 90 రోజుల ఉచిత నైపుణ్య శిక్షణ, ఉచిత హాస్టల్, భోజనం & 100% ఉద్యోగ అవకాశం!</span>
+            </div>
+            <div className="flex items-center gap-3 shrink-0">
+              <a href="tel:9182065618" className="text-xs bg-[#D97736] text-white px-3 py-1.5 rounded-lg font-bold hover:bg-[#c26428] transition-colors">
+                📞 Call: 9182065618
+              </a>
+              <Link href="/events" className="text-xs text-white underline hover:text-[#D97736]">
+                వివరాలు చూడండి
+              </Link>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Copy */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-[#134E48] text-[#D97736] px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-emerald-800">
                 <Sparkles className="w-4 h-4" />
-                Rooted in Vijayawada • Serving Andhra Pradesh
+                నూర్ బాషా భవన్ • ఈడుపుగల్లు, విజయవాడ
               </div>
 
               <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
-                Empowering Lives Through Dignity, Care & Education
+                Noor Basha Muslim Charitable Trust
               </h1>
+              <p className="text-lg sm:text-xl font-semibold text-[#D97736]">
+                నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్
+              </p>
 
               <p className="text-base sm:text-lg text-[#FAF8F5]/85 max-w-2xl leading-relaxed">
-                We are a registered public charitable trust working directly with vulnerable children, senior citizens, and women along the Krishna river basin and rural Andhra Pradesh.
+                గ్రామీణ నిరుద్యోగ యువతకు ఉచిత నైపుణ్య శిక్షణ, ఉచిత హాస్టల్, భోజనం మరియు ఉపాధి కల్పన. Serving rural youth and underprivileged families in Vijayawada, Krishna district & Andhra Pradesh.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/donate">
+                <Link href="/programs/ddu-gky-skill-development">
                   <Button variant="accent" size="lg" className="gap-2 w-full sm:w-auto shadow-md">
-                    <Heart className="w-5 h-5 fill-white" />
-                    Donate Now (80G Tax Exemption)
+                    <GraduationCap className="w-5 h-5" />
+                    Apply For Free Training (ఉచిత శిక్షణ)
                   </Button>
                 </Link>
-                <Link href="/programs">
+                <Link href="/contact">
                   <Button
                     variant="outline"
                     size="lg"
                     className="border-white/30 text-white hover:bg-white/10 hover:border-white w-full sm:w-auto"
                   >
-                    Explore Our Initiatives
+                    Contact Helpline
                   </Button>
                 </Link>
               </div>
@@ -81,15 +100,15 @@ export default async function HomePage() {
               <div className="pt-4 border-t border-emerald-900/60 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-[#FAF8F5]/70">
                 <span className="flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                  100% Verified Non-Profit
+                  DDU-GKY / SEEDAP Partner
                 </span>
                 <span className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  Direct Community Intervention
+                  100% Free Hostel & Food
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Award className="w-4 h-4 text-[#D97736]" />
-                  Transparent Auditing
+                  Govt Certificate & Placements
                 </span>
               </div>
             </div>
@@ -99,8 +118,8 @@ export default async function HomePage() {
               <div className="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden border-2 border-emerald-800/80 shadow-2xl bg-[#134E48]">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop"
-                    alt="Vijayawada community children in study initiative"
+                    src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1000&auto=format&fit=crop"
+                    alt="Solar lighting assemble and skill workshop"
                     fill
                     priority
                     className="object-cover"
@@ -108,19 +127,30 @@ export default async function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F3E36] via-transparent to-transparent" />
                 </div>
                 <div className="p-6 space-y-3">
-                  <span className="text-xs uppercase tracking-wider text-[#D97736] font-bold">
-                    Featured Initiative
-                  </span>
-                  <h3 className="text-xl font-bold text-white">Vidya Jyothi: Education for All</h3>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs uppercase tracking-wider text-[#D97736] font-bold">
+                      AURA EDUCATIONAL SOCIETY & TRUST
+                    </span>
+                    <Badge variant="accent">Admissions Open</Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-white">90-Day DDU-GKY Skill Program</h3>
                   <p className="text-sm text-[#FAF8F5]/80">
-                    Sponsoring textbooks, uniforms, and digital classroom access for over 500 children across municipal and rural schools.
+                    Solar Lighting Assemble, Computers & Typing, Spoken English & Communication Skills. Free food, hostel, and campus selection!
                   </p>
-                  <Link
-                    href="/programs/vidya-jyothi-scholarships"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#D97736] hover:text-white transition-colors"
-                  >
-                    View Program Details <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  <div className="text-xs text-[#FAF8F5]/70">
+                    📍 <strong>Venue:</strong> D.No. 5-7, Noor Basha Bhavan, Edupugallu, Vijayawada
+                  </div>
+                  <div className="pt-2 flex items-center justify-between">
+                    <span className="text-xs font-semibold text-emerald-300">
+                      Eligible: SSC Pass • 18-35 Yrs
+                    </span>
+                    <Link
+                      href="/programs/ddu-gky-skill-development"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-[#D97736] hover:text-white transition-colors"
+                    >
+                      Apply Now <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -165,24 +195,30 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge variant="accent">About Our Trust</Badge>
+              <Badge variant="accent">నూర్ బాషా ట్రస్ట్ & భవన్</Badge>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0F3E36] tracking-tight">
-                Rooted In Compassion, Driven By Measurable Community Outcomes
+                Noor Basha Muslim Charitable Trust (నూర్ బాషా భవన్)
               </h2>
               <p className="text-base text-[#1E293B]/80 leading-relaxed">
-                Established as a registered non-profit trust in Vijayawada, we are committed to closing opportunity gaps for the most neglected socio-economic groups. Rather than one-off handouts, we design self-sustaining interventions that cultivate long-term self-reliance.
+                విజయవాడ సమీపంలోని ఈడుపుగల్లు లో నిర్మించిన నూర్ బాషా భవన్ లో గ్రామీణ నిరుద్యోగ యువతీ యువకులకు ఉచిత శిక్షణ, ఉచిత హాస్టల్, భోజనం కల్పించి ఉద్యోగావకాశాలు అందిస్తున్నాము. Established as a dedicated public charitable trust in Krishna district, Andhra Pradesh.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#0F3E36] shrink-0 mt-0.5" />
                   <p className="text-sm text-[#1E293B]">
-                    <strong>Grassroots Presence:</strong> Real volunteers on the ground across Vijayawada, Guntur, and rural Krishna district habitations.
+                    <strong>Free 90-Day DDU-GKY Training:</strong> Solar lighting assemble, computers & typing, spoken English and communication skills.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#0F3E36] shrink-0 mt-0.5" />
                   <p className="text-sm text-[#1E293B]">
-                    <strong>Statutory Transparency:</strong> Fully compliant financial accounts, 80G tax exemptions, and digital receipts for every single rupee donated.
+                    <strong>Free Residential & 100% Placement:</strong> Free breakfast, meals, hostel stay, and campus selections upon completion.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#0F3E36] shrink-0 mt-0.5" />
+                  <p className="text-sm text-[#1E293B]">
+                    <strong>కుల, మతాల విభేదం లేకుండా:</strong> అర్హత కలిగిన అందరికీ సమాన అవకాశం (Open to SSC pass youth aged 18 to 35).
                   </p>
                 </div>
               </div>
@@ -379,7 +415,7 @@ export default async function HomePage() {
               <div>
                 <Badge variant="accent">Get Involved Locally</Badge>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0F3E36] mt-1">
-                  Upcoming Community Drives in Vijayawada
+                  Upcoming Community Drives & Admissions
                 </h2>
               </div>
               <Link href="/events">
@@ -415,7 +451,7 @@ export default async function HomePage() {
                         href={`/events/${event.slug}`}
                         className="text-xs font-bold text-[#D97736] hover:underline"
                       >
-                        Event Details & Volunteer Sign-Up →
+                        Event Details & Contact Numbers →
                       </Link>
                     </div>
                   </div>
@@ -435,9 +471,9 @@ export default async function HomePage() {
               <div className="w-12 h-12 rounded-full bg-[#D97736] flex items-center justify-center text-white">
                 <Heart className="w-6 h-6 fill-white" />
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold">Fuel a Life with Your Contribution</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold">Support Noor Basha Charitable Trust</h3>
               <p className="text-sm text-[#FAF8F5]/85 leading-relaxed">
-                Your donations directly sponsor textbooks for rural children, fund medicines for geriatric camps, and buy sewing equipment for aspiring women entrepreneurs.
+                Your contributions directly support free hostel facilities, food, technical training kits for unemployed youth, education aid, and medical relief camps at Edupugallu.
               </p>
               <div className="pt-2">
                 <Link href="/donate">

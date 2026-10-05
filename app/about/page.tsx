@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "About Us | Vijayawada Charitable Trust",
-  description: "Learn about the mission, vision, governance, and transparent community interventions of Vijayawada Charitable Trust.",
+  title: "About Us | Noor Basha Muslim Charitable Trust",
+  description: "Learn about the mission, vision, governance, and community skill training at Noor Basha Bhavan, Edupugallu, Vijayawada.",
 };
 
 export default function AboutPage() {
@@ -18,10 +18,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <Badge variant="accent">Our History & Purpose</Badge>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight">
-            Serving Vijayawada with Integrity & Heart
+            Noor Basha Muslim Charitable Trust
           </h1>
+          <p className="text-lg text-[#D97736] font-semibold">
+            నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్ • ఈడుపుగల్లు, విజయవాడ
+          </p>
           <p className="text-base sm:text-lg text-[#FAF8F5]/80 max-w-2xl mx-auto">
-            Founded with an enduring conviction: every human deserves equal dignity, healthcare, and educational opportunity regardless of socioeconomic birth.
+            గ్రామీణ నిరుద్యోగ యువతకు ఉచిత నైపుణ్య శిక్షణ మరియు ఉపాధి కల్పన కొరకు అంకితమైన సేవా సంస్థ.
           </p>
         </div>
       </section>
@@ -32,16 +35,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
               <span className="text-xs uppercase font-bold text-[#D97736] tracking-wider">
-                The Inception
+                The Inception & Noor Basha Bhavan
               </span>
               <h2 className="font-serif text-3xl font-bold text-[#0F3E36]">
-                From Local Relief to Systematic Grassroots Change
+                నూర్ బాషా భవన్: నిరుద్యోగ యువతకు ఉపాధి మార్గం
               </h2>
               <p className="text-base text-[#1E293B]/80 leading-relaxed">
-                What began in Vijayawada as an ad-hoc emergency food and medicine relief initiative during seasonal Krishna river floods has evolved into a registered public charitable trust. Over eight years of structured field work, we identified that sporadic handouts do not break cycles of generational poverty.
+                నూర్ బాషా (ముస్లిం) చారిటబుల్ ట్రస్ట్ ఆధ్వర్యంలో విజయవాడలోని ఈడుపుగల్లు లో నూర్ బాషా భవన్ నిర్మించబడింది. గ్రామీణ ప్రాంతాల్లోని నిరుద్యోగ యువతీ యువకులకు ఉచిత శిక్షణ మరియు ఉపాధి కల్పన కొరకు 90 రోజులు DDU-GKY (దీన దయాళ్ ఉపాధ్యాయ గ్రామీణ కౌశల్య యోజన) మరియు SEEDAP ద్వారా శిక్షణ విజయవంతంగా కొనసాగుతోంది.
               </p>
               <p className="text-base text-[#1E293B]/80 leading-relaxed">
-                Today, our trustees, program directors, and volunteer brigade channel every rupee into targeted interventions: comprehensive educational sponsorship for primary schoolers, regular health camps for geriatric laborers, and market-ready vocational skills for rural women.
+                10వ తరగతి పాసైన 18 నుండి 35 సంవత్సరాల వయస్సు కలిగిన యువతీ యువకులకు కుల, మతాలతో సంబంధం లేకుండా ఉచిత శిక్షణ, ఉచిత అల్పాహారము, భోజన సదుపాయము మరియు ఉచిత హాస్టల్ వసతి కల్పిస్తున్నాము. శిక్షణ పూర్తయిన వెంటనే క్యాంపస్ సెలక్షన్స్ ద్వారా ఉద్యోగ అవకాశాలు అందిస్తున్నాము.
               </p>
             </div>
 

@@ -37,8 +37,8 @@ export function AdminSidebar() {
       {/* Brand Header */}
       <div className="p-6 border-b border-[#134E48] flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-[#134E48] border border-[#D97736] flex items-center justify-center font-bold text-sm text-[#D97736]">
-            VCT
+          <div className="w-9 h-9 rounded-full bg-[#134E48] border border-[#D97736] flex items-center justify-center font-bold text-xs tracking-tighter text-[#D97736]">
+            NBMCT
           </div>
           <div>
             <h2 className="font-serif font-bold text-sm tracking-tight">Trust CMS</h2>

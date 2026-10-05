@@ -7,7 +7,7 @@ import { formatINR } from "@/lib/utils";
 import { ShieldCheck, BarChart3, Users, HeartHandshake, MapPin } from "lucide-react";
 
 export const metadata = {
-  title: "Impact & Transparency | Vijayawada Charitable Trust",
+  title: "Impact & Transparency | Noor Basha Muslim Charitable Trust",
   description:
     "View our audited community impact, fund allocations, and reach across Vijayawada, Krishna district, and Andhra Pradesh.",
 };
