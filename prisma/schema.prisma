@@ -1,0 +1,198 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  ADMIN
+  EDITOR
+}
+
+enum DonationStatus {
+  PENDING
+  SUCCESS
+  FAILED
+  REFUNDED
+}
+
+enum VolunteerStatus {
+  PENDING
+  REVIEWED
+  APPROVED
+  REJECTED
+}
+
+enum EventStatus {
+  UPCOMING
+  ONGOING
+  COMPLETED
+  CANCELLED
+}
+
+enum MessageStatus {
+  UNREAD
+  READ
+  ARCHIVED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      UserRole @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([email])
+}
+
+model Program {
+  id               String   @id @default(cuid())
+  title            String
+  slug             String   @unique
+  shortDescription String
+  description      String   @db.Text
+  coverImage       String
+  targetAmount     Float?
+  raisedAmount     Float?   @default(0)
+  beneficiaries    Int?     @default(0)
+  status           String   @default("ACTIVE") // ACTIVE, ARCHIVED, DRAFT
+  featured         Boolean  @default(false)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([slug])
+  @@index([status])
+}
+
+model Donation {
+  id                 String         @id @default(cuid())
+  donorName          String
+  email              String
+  phone              String?
+  pan                String?
+  address            String?
+  amount             Float
+  currency           String         @default("INR")
+  razorpayOrderId    String         @unique
+  razorpayPaymentId  String?        @unique
+  razorpaySignature  String?
+  status             DonationStatus @default(PENDING)
+  anonymous          Boolean        @default(false)
+  programId          String?
+  notes              String?
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([razorpayOrderId])
+  @@index([createdAt])
+}
+
+model Volunteer {
+  id             String          @id @default(cuid())
+  name           String
+  email          String
+  phone          String
+  city           String          @default("Vijayawada")
+  areaOfInterest String
+  availability   String
+  message        String?         @db.Text
+  status         VolunteerStatus @default(PENDING)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model Story {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  excerpt     String
+  content     String   @db.Text
+  image       String
+  author      String?  @default("Trust Field Team")
+  published   Boolean  @default(true)
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([slug])
+  @@index([published])
+}
+
+model Event {
+  id          String      @id @default(cuid())
+  title       String
+  slug        String      @unique
+  description String      @db.Text
+  image       String
+  location    String      @default("Vijayawada, Andhra Pradesh")
+  eventDate   DateTime
+  status      EventStatus @default(UPCOMING)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([slug])
+  @@index([eventDate])
+  @@index([status])
+}
+
+model GalleryImage {
+  id        String   @id @default(cuid())
+  imageUrl  String
+  publicId  String?
+  title     String
+  caption   String?
+  category  String   @default("Community") // Community, Healthcare, Education, Relief
+  createdAt DateTime @default(now())
+
+  @@index([category])
+  @@index([createdAt])
+}
+
+model ContactMessage {
+  id        String        @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String        @db.Text
+  status    MessageStatus @default(UNREAD)
+  createdAt DateTime      @default(now())
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model OrganizationSettings {
+  id                 String   @id @default("default")
+  name               String   @default("Noor Basha Muslim Charitable Trust")
+  shortName          String   @default("NBMCT")
+  tagline            String   @default("Serving communities with compassion, dignity and meaningful action.")
+  mission            String   @db.Text
+  vision             String   @db.Text
+  aboutContent       String   @db.Text
+  email              String   @default("contact@noorbashatrust.org")
+  phone              String   @default("[Placeholder: Official Contact Number]")
+  address            String   @default("[Placeholder: Official Office Address, Vijayawada, Andhra Pradesh, India]")
+  city               String   @default("Vijayawada")
+  state              String   @default("Andhra Pradesh")
+  registrationNumber String?  @default("[Registration Details Pending Verification]")
+  taxExemptionNotes  String?  @default("[80G / Tax exemption status pending verification by the Trust]")
+  facebookUrl        String?
+  instagramUrl       String?
+  twitterUrl         String?
+  youtubeUrl         String?
+  updatedAt          DateTime @updatedAt
+}
